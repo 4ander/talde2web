@@ -1,4 +1,3 @@
-eiiiiinsertintoJokalariak
 values
 (300017,'79268504D','Silva','Adel',1,'Aran121'),
 (300018,'79268510J','Poulsen','Ademola',2,'Aran121'),
