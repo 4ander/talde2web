@@ -1,3 +1,4 @@
+/*htmlaren plantilla*/
 *{
     margin: 0;
     padding: 0;
@@ -8,37 +9,51 @@
       height: 100%;
       background-image: url("../irudiak/Fondo.jpg");
   }
-  .item1{grid-area: header;}
-  .item2{grid-area:formularioa;}
-  .item3{grid-area:footer;}
-  
-  .grid-container{
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-  
-    border-color: black;
-    border-style: solid;
-    border-width: 10px;
-    grid-template-areas: 
-    'header header header'
-    'formularioa formularioa formularioa'
-    'footer footer footer';
+
+/*grid elementuen programazioaren hasiera*/
+
+  /*grid elementuak, elementu bakoitza htmlaren alde bat izango da*/
+      .item1{grid-area: header;}
+      .item2{grid-area:formularioa;}
+      .item3{grid-area:footer;}
+      
+  /*htmlaren gorputzaren elementuak*/
+
+      .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        border-color: black;
+        border-style: solid;
+        border-width: 10px;
+        grid-template-areas: /*htmlaren antolamendua lerroka*/
+        'header header header'
+        'formularioa formularioa formularioa'
+        'footer footer footer';
+      }
+          
+      /*grid (gorputzaren barne elementuak) bakoitzaren elementuak*/
+      .grid-container>div{
+        border-color: gray;
+        border-style: solid;
+        border-width: 10px;
+      }
+/*grid elementuen programazioaren bukaera*/
+
+
+ 
+/* header eta nabigazio menuaren programazioaren hasiera*/
+  header{
+    padding: 1%;
   }
-  .grid-container>div{
-    border-color: gray;
-    border-style: solid;
-    border-width: 10px;
-  }
+
+/*nabigazio menuaren programazioaren hasiera*/
+    /*hiperesteken textu kolorea kendu*/
   a:active {
     text-decoration: none;
   }
   a {
     text-decoration: none;
-  }
-  
-  header{
-    padding: 1%;
   }
   
   .navegacion{
@@ -48,14 +63,17 @@
     background: gray;
   }
   
+/*"ul" listaren puntuak kentzeko*/
   .navegacion ul{
     list-style: none;
   }
+
+  /*menuko aukerak*/
   .menu >li{
     position: relative;
     display: inline-block;
     font-size: 1.5em;
-    font-family: Joker;
+    font-family: Joker; /*importatutako tipografia*/
     src: url("Fonts/joker.ttf");
     font: oblique bold 120% cursive;
     color: #fff;
@@ -69,15 +87,18 @@
     font: oblique bold 120% cursive;
     color: #fff;
     font-size: 35px;
-    font-family: Joker;
+    font-family: Joker; /*importatutako tipografia*/
     src: url("Fonts/joker.ttf");
   
   }
   
+/*xagua aukera gainean jartzean kolorea aldatzea*/
   .menu li a:hover{
     color: #44403f;
     transition: all .3s;
   }
+    
+/*aukeren sliderra (liga eta edukinak)*/
   .submenu{
     position:absolute;
     background: #333333;
@@ -101,6 +122,10 @@
     opacity: 1;
     
   }
+
+  /*header eta menuaren bukaera*/
+
+/*grid-container kanpoko gorputzaren programazioa*/
   body{
       border: #000;
       border-top-width: 40px;
@@ -111,6 +136,9 @@
       margin-left:12.5%;
       background-color: white;
   }
+
+
+/*footerraren programazioa*/
   footer h2{
     color: white;
   }
@@ -128,10 +156,10 @@
     padding-top: 10%;
   }
  
+/*formularioaren programazioaren hasiera*/
   form{
     margin: 0 auto;
     width:600px;
-    
     margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 7px;
@@ -182,11 +210,8 @@
     padding: 20px;
     
   }
-  p{
-    font-size:1.5em;
-    color: white;
-    
-  }
+  
+
   .item2>div{
       width:50%;
       margin: auto;
@@ -194,6 +219,14 @@
       background-color: rgba(10,60,70,0.7);
 
   }
+  /*formularioaren programazioaren bukaera*/
+
+  p{
+    font-size:1.5em;
+    color: white;
+    
+  }
+
 
   @media (max-width:900px){
    

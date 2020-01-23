@@ -1,3 +1,4 @@
+/*htmlaren plantilla*/
 *{
   margin: 0;
   padding: 0;
@@ -8,99 +9,117 @@ html{
     height: 100%;
     background-image: url("../irudiak/Fondo.jpg");
 }
-.item1{grid-area: header;}
-.item2{grid-area:berriak;}
-.item3{grid-area:footer;}
 
-.grid-container{
-  display: grid;
-  grid-gap: 10px;
-  padding: 10px;
 
-  border-color: black;
-  border-style: solid;
-  border-width: 10px;
-  grid-template-areas: 
-  'header header header'
-  'berriak berriak berriak'
-  'footer footer footer';
-}
-.grid-container>div{
-  border-color: gray;
-  border-style: solid;
-  border-width: 10px;
-}
-a:active {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
+/*grid elementuen programazioaren hasiera*/
 
-header{
-  padding: 1%;
-}
+      /*grid elementuak, elementu bakoitza htmlaren alde bat izango da*/
+    .item1{grid-area: header;}
+    .item2{grid-area:berriak;}
+    .item3{grid-area:footer;}
 
-.navegacion{
-  width: 100%;
-  margin: 30px auto;
-  
-  background: gray;
-}
+    /*htmlaren gorputzaren elementuak*/
+    .grid-container{
+      display: grid;
+      grid-gap: 10px;
+      padding: 10px;
+      border-color: black;
+      border-style: solid;
+      border-width: 10px;
+      grid-template-areas: /*htmlaren antolamendua lerroka*/
+      'header header header'
+      'berriak berriak berriak'
+      'footer footer footer';
+    }
+    /*grid (gorputzaren barne elementuak) bakoitzaren elementuak*/
+    .grid-container>div{
+      border-color: gray;
+      border-style: solid;
+      border-width: 10px;
+    }
+/*grid elementuen programazioaren bukaera*/
 
-.navegacion ul{
-  list-style: none;
-}
-.menu >li{
-  position: relative;
-  display: inline-block;
-  font-size: 1.5em;
-  font-family: Joker;
-  src: url("Fonts/joker.ttf");
-  font: oblique bold 120% cursive;
-  color: #fff;
-}
-.menu >li>a{
-  
-  display: block;
-  padding: 15px 20px;
-  font-family: 'Open sans';
-  text-decoration: none;
-  font: oblique bold 120% cursive;
-  color: #fff;
-  font-size: 35px;
-  font-family: Joker;
-  src: url("Fonts/joker.ttf");
 
-}
 
-.menu li a:hover{
-  color: #44403f;
-  transition: all .3s;
-}
-.submenu{
-  position:absolute;
-  background: #333333;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1.5s;
-  text-align: center;
+/* header eta nabigazio menuaren programazioaren hasiera*/
+    header{
+      padding: 1%;
+    }
+  /*nabigazio menuaren programazioaren hasiera*/
+    /*hiperesteken textu kolorea kendu*/
+      a:active {
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
 
-}
+      .navegacion{
+      width: 100%;
+      margin: 30px auto;
+      
+      background: gray;
+    }
+  /*"ul" listaren puntuak kentzeko*/
+    .navegacion ul{
+      list-style: none;
+    }
 
-.submenu li a{
-  display: block;
-  padding: 15px;
-  color: #fff;
-  font-family:'Open sans';
-  text-decoration: none;
-}
+  /*menuko aukerak*/
+    .menu >li{
+      position: relative;
+      display: inline-block;
+      font-size: 1.5em;
+      font-family: Joker; /*importatutako tipografia*/
+      src: url("Fonts/joker.ttf");
+      font: oblique bold 120% cursive;
+      color: #fff;
+    }
+    .menu >li>a{
+      
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      font: oblique bold 120% cursive;
+      color: #fff;
+      font-size: 35px;
+      font-family: Joker; /*importatutako tipografia*/
+      src: url("Fonts/joker.ttf");
 
-.menu li:hover .submenu{
-  visibility: visible;
-  opacity: 1;
-  
-}
+    }
+
+  /*xagua aukera gainean jartzean kolorea aldatzea*/
+    .menu li a:hover{
+      color: #44403f;
+      transition: all .3s;
+    }
+  /*aukeren sliderra (liga eta edukinak)*/
+    .submenu{
+      position:absolute;
+      background: #333333;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1.5s;
+      text-align: center;
+
+    }
+
+    .submenu li a{
+      display: block;
+      padding: 15px;
+      color: #fff;
+      font-family:'Open sans';
+      text-decoration: none;
+    }
+
+    .menu li:hover .submenu{
+      visibility: visible;
+      opacity: 1;
+      
+    }
+/*header eta menuaren bukaera*/
+
+/*grid-container kanpoko gorputzaren programazioa*/
 body{
     border: #000;
     border-top-width: 40px;
@@ -111,6 +130,8 @@ body{
     margin-left:12.5%;
     background-color: white;
 }
+
+/*footerraren programazioa*/
 footer h2{
   color: white;
 }
@@ -123,21 +144,24 @@ footer{
     border-radius: 2%;
 }
 
-#berriak td{
-    border-color: red;
-    border-style: solid;
-    border-width: 2px;
 
-}
-#berriak{
-    padding: 5% 0 5% 10%;
-}
 h2{
   padding-top: 10%;
 }
 /*berrien sliderrraren programazioa*/
+#berriak td{
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+
+}
+#berriak{
+  padding: 5% 0 5% 10%;
+}
+
+/*berriak agertzen diren pantailaren programazioa*/
 .slideshow-container {
-  max-width: 700px;
+  max-width: 700px;/*irudien tamaina*/
   position: relative;
   margin-bottom: 10%;
   margin-left: 20%;
