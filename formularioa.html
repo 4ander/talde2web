@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formularioa.css">
+    <title>Bizkaiko eskubaloi federazioa</title>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="item1">
+        <img src="irudiak/92fa41e3-fbb6-4e9b-b778-f42a63b5e66e_200x200(1).png" alt="">
+        <nav class="navegacion">
+            <ul class="menu">
+              <li><a href="index.html">Hasiera</a></li>
+              <li><a href="taldeak eta partidak.html">Liga</a>
+                  <ul class="submenu">
+                      <li><a href="taldeak eta partidak.html">Egutegia</a></li>
+                      <li><a href="taldeak eta partidak.html">Sailkapena</a></li>
+                      <li><a href="taldeak eta partidak.html">Taldeak</a></li>
+                  </ul>
+              </li>
+              <li><a href="partiduak.html">Partiduak</a>
+                  
+              </li>
+              <li><a href="">Edukina</a>
+                <ul class="submenu">
+                  <li><a href="">Bideoak</a></li>
+                  <li><a href="">Berriak</a></li>
+              </ul>
+              </li>
+              <li><a href="Formulario.html">Kontaktua</a></li>
+            </ul>
+         </nav>
+      </div>
+
+      <div class="item2">
+        <div class="container">
+        <div action="">
+            <h2></h2>
+            <div >
+                <input type ="text" name = "Nan" class="Nan" placeholder = "Nan" required pattern="[1-9]{8}[a-zA-Z]{1}"  title="8 hitz eta zenbaki bat sartu behar dira, adb:12345678A">
+            </div>
+            <div >
+                <input type ="text" name = "Izena" class="Izena" placeholder = "Izena"  required pattern=".{3}" title="Izen luzeago bat sartu">
+            </div>
+            <div >
+                <input type="text" name = "Abizena" class="Abizena" placeholder="Abizena"  required pattern=".{3}" title="Abizen luzeago bat sartu">
+            </div>
+            <div>
+                <input type="text" name = "Abizena2" class="Abizena2" placeholder="Abizena2"  required pattern=".{3}" title="Abizen luzeago bat sartu">
+            </div>
+            <div >
+                <input type="email" name="Helbidea" class="Helbidea" placeholder="Helbidea"  required>
+            </div>
+            <div >
+                <input type ="text" name = "PostaKodea" class="PostaKodea" placeholder = "PostaKodea" required pattern="[1-9]{5}" title="posta kodeak 5 zenbaki izan behar ditu ad:48360">
+            </div>
+            <div> 
+                <input type="date" name="Jaiotze-data" class="Jaiotze-data" placeholder ="Jaiotze-data" required>
+            </div>
+            <div >
+                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Etxeko-Telefonoa" required pattern="[9]{1}[1-9]{7}" title="telefono zenbakiak '9' zenbakitik hasten dira eta guztira 8 dira">
+            </div>
+            <div >
+                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Mugikor-Telefonoa" required pattern="[1-9]{8}" title="8 zenbaki sartu behar dira">
+            </div>
+            <div >
+                <select name = "Sexua"  required>
+                    <option value="1">Gizona</option> 
+                    <option value="2">Emakumea</option> 
+                    <option value="3">Ez definitua</option> 
+                </select>
+            </div>
+            <div >
+                <select name = "Taldeak"  required>
+                    <option value="1">Taldea1</option> 
+                    <option value="2">Taldea2</option> 
+                    <option value="3">Taldea3</option> 
+                    <option value="4">Taldea4</option> 
+                    <option value="5">Taldea5</option> 
+                    <option value="6">Taldea6</option> 
+                    <option value="7">Taldea7</option> 
+                    <option value="8">Taldea8</option> 
+                    <option value="9">Taldea9</option> 
+                    <option value="10">Taldea10</option> 
+                    <option value="11">Taldea11</option> 
+                    <option value="12">Taldea12</option> 
+                    <option value="13">Taldea13</option> 
+                    <option value="14">Taldea14</option> 
+                    <option value="15">Taldea15</option> 
+                    <option value="16">Taldea16</option> 
+                    <option value="17">Taldea17</option> 
+                    <option value="18">Taldea18</option> 
+                    <option value="19">Taldea19</option> 
+                    <option value="20">Taldea20</option> 
+                </select>
+            </div>
+            <div >
+                <select name = "Taldeak"  required>
+                    <option value="1"> Kolaboratzaile 150€</option> 
+                    <option value="2"> Heldua 70€</option>
+                    <option value="3"> Gaztea 50€</option> 
+                    <option value="4"> Jarratzailea 40€</option>
+                    <option value="5"> Junior 30€</option> 
+                    <option value="6"> Haurra 5€</option> 
+                </select>
+            </div>
+            <div>
+                <p >
+                    Zure argazki bat igo:
+                    <input type="file" name="archivosubido">
+                </p>
+            </div>
+            <div >    
+                <input type ="text" name = "Bankua" class="Bankua" placeholder = "Bankuaren izena" required pattern="[a-zA-Z]">
+            </div>
+            <div >
+                <input type ="text" name = "BankuaZenbakia" class="BankuaZenbakia" placeholder = "Bankua Zenbakia" required pattern="[0-9]">
+            </div>
+            <div class=>
+                <button name = "Bidali" id = "Botoia" class="Botoia_Bidali">Bidali</button>
+            </div>
+      </div>
+    </div>
+      <br>
+
+    </div>
+    <div class="item3">
+    <footer>
+        <h2>BizkaiaBasket, Bizkaiko saskibaloi federazioa</h2>
+        <img  src="irudiak/twitter.png" alt="" width="20px" heigth="20px">
+        <img  src="irudiak/facebook.png" alt="" width="20px" heigth="20px">
+        <img src="irudiak/youtube.png" alt="" width="20px" height="20px">
+    </footer>
+  </div>
+  </div>
+</body>
+</html>
