@@ -1,12 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-  
   }
   html{
       width:100%;
       height: 100%;
-      background-image: url("../media/Fondo.jpg");
+      background-image: url("../irudiak/Fondo.jpg");
+  }
+  /*gora bidaltzeko botoia*/
+#btn_gora{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    margin-left:70%;
+    margin-top: 45%;
+    z-index:3;
   }
   .item1{grid-area: header;}
   .item2{grid-area:formularioa;}
@@ -25,6 +34,7 @@
     'formularioa formularioa formularioa'
     'footer footer footer';
   }
+  
   .grid-container>div{
     border-color: gray;
     border-style: solid;
@@ -111,6 +121,24 @@
       margin-left:12.5%;
       background-color: white;
   }
+
+  .edukinak_berriak{
+      display: flex;
+      flex-direction: column;
+  }
+  .edukinak_berriak>div{
+      width: 70%;
+      height: 200px;
+      background-color:red;
+      margin: 10px;
+      padding: 2%;
+  }
+  #berria_textua{
+      margin-left: 25%;
+      margin-top: -20%;
+  }
+ 
+  
   footer h2{
     color: white;
   }
@@ -128,101 +156,4 @@
     padding-top: 10%;
   }
  
-  form{
-    margin: 0 auto;
-    width:600px;
-    
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    border-radius: 7px;
-    background-color: rgba(10,60,70,0.7);
-    box-sizing:border-box;
-    margin-top:20px;
-    text-align: center;
-   }
-   input,textarea,select{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing:border-box;
-    font-size: 17px;
-    border: none;
-   }
-   
-   form h2{
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 20px;
-    display:inline-block;
-    font-family: monospace;
-   }
-   textarea{
-    max-height: 200px;
-    min-height:100px;
-    max-width: 100%;
-   }
-   button{
-    background-color: #31384A;
-    color: #fff;
-    padding: 20px;
-    border: none;
-    width: 100%;
-    font-family: monospace;
-    font-weight: bolder;
-    font-size: 2em;
-   }
-   button:hover{
-    cursor:pointer;
-   }
-  
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    
-  }
-  p{
-    font-size:1.5em;
-    color: white;
-    
-  }
-  .item2>div{
-      width:50%;
-      margin: auto;
-      margin-top: 10px;
-  }
-
-  @media (max-width:900px){
-   
-    form{
-      width:100%;
-    } 
-    .navegacion{
-    height:16%;
-    }
-    .menu{
-      width:100%;
-    }
-    .submenu{
-      width:100%;
-    }
-   
-   }
-   @media only screen and (max-width:700px){
-     
-    
-   .navegacion{
-    height:22%;
-    }
-    .menu{
-      width:100%;
-    }
-    .submenu{
-      width:100%;
-    }
-   
-   } 
-  
-  
   

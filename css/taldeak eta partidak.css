@@ -7,11 +7,22 @@
       height: 100%;
       background-image: url("../irudiak/fondo.jpg");
   }
+  #btn_gora{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    margin-left:70%;
+    margin-top: 45%;
+    z-index:3;
+  }
   .item1 { grid-area: header; }
   .item2 { grid-area: egutegi; }
   .item3 { grid-area: klasifikazioa; }
   .item4 { grid-area: footer; }
   .item5 {grid-area: main;}
+
+  /*gora bidaltzeko botoia*/
 
 .grid-container {
   display: grid;
