@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/formularioa.css">
     <title>Bizkaiko eskubaloi federazioa</title>
 </head>
-<div id="btn_gora"><a href="index.html">este boton vale para ir arriba</a></div>
+<div id="btn_gora"><a href="formularioa.html">este boton vale para ir arriba</a></div>
 <body>
     <div class="grid-container">
     <!--headerra hasten da-->
@@ -42,37 +42,49 @@
 
       <!--formularioa hasten da-->
       <div class="item2">
+          <fieldset>
+              <legend>Formularioa</legend>
         <div class="container">
         <div action="">
-            <h2></h2>
+            <div class="asterisko_kutxa">
+            <h2 class="asterisko_gorria">Beharrezkoak diren datuak * bat daukate</h2>
+        </div>
             <div >
-                <input type ="text" name = "Nan" class="Nan" placeholder = "Nan" required pattern="[1-9]{8}[a-zA-Z]{1}"  title="8 hitz eta zenbaki bat sartu behar dira, adb:12345678A">
+                <p class="gorria">*</p><input type ="text" name = "Nan" class="Nan" placeholder = "Nan" required pattern="[1-9]{8}[a-zA-Z]{1}"  title="8 hitz eta zenbaki bat sartu behar dira, adb:12345678A" autofocus>
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type ="text" name = "Izena" class="Izena" placeholder = "Izena"  required pattern=".{3}" title="Izen luzeago bat sartu">
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type="text" name = "Abizena" class="Abizena" placeholder="Abizena"  required pattern=".{3}" title="Abizen luzeago bat sartu">
             </div>
             <div>
-                <input type="text" name = "Abizena2" class="Abizena2" placeholder="Abizena2"  required pattern=".{3}" title="Abizen luzeago bat sartu">
+                <input type="text" name = "Abizena2" class="Abizena2" placeholder="Abizena2" pattern=".{3}" title="Abizen luzeago bat sartu">
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type="email" name="Helbidea" class="Helbidea" placeholder="Helbidea"  required>
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type ="text" name = "PostaKodea" class="PostaKodea" placeholder = "PostaKodea" required pattern="[1-9]{5}" title="posta kodeak 5 zenbaki izan behar ditu ad:48360">
             </div>
             <div> 
+                <p class="gorria">*</p>
                 <input type="date" name="Jaiotze-data" class="Jaiotze-data" placeholder ="Jaiotze-data" required>
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Etxeko-Telefonoa" required pattern="[9]{1}[1-9]{7}" title="telefono zenbakiak '9' zenbakitik hasten dira eta guztira 8 dira">
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Mugikor-Telefonoa" required pattern="[1-9]{8}" title="8 zenbaki sartu behar dira">
             </div>
             <div >
+                <p class="gorria">*</p>
                 <select name = "Sexua"  required>
                     <option value="1">Gizona</option> 
                     <option value="2">Emakumea</option> 
@@ -80,6 +92,7 @@
                 </select>
             </div>
             <div >
+                <p class="gorria">*</p>
                 <select name = "Taldeak"  required>
                     <option value="1">Taldea1</option> 
                     <option value="2">Taldea2</option> 
@@ -104,7 +117,7 @@
                 </select>
             </div>
             <div >
-                <select name = "Taldeak"  required>
+                <select name = "Taldeak">
                     <option value="1"> Kolaboratzaile 150€</option> 
                     <option value="2"> Heldua 70€</option>
                     <option value="3"> Gaztea 50€</option> 
@@ -114,21 +127,29 @@
                 </select>
             </div>
             <div>
-                <p >
+                <p>
                     Zure argazki bat igo:
                     <input type="file" name="archivosubido">
                 </p>
             </div>
-            <div >    
+            <div > 
+                <p class="gorria">*</p>   
                 <input type ="text" name = "Bankua" class="Bankua" placeholder = "Bankuaren izena" required pattern="[a-zA-Z]">
             </div>
             <div >
+                <p class="gorria">*</p>
                 <input type ="text" name = "BankuaZenbakia" class="BankuaZenbakia" placeholder = "Bankua Zenbakia" required pattern="[0-9]">
+            </div>
+            <div class="checkbox">
+                <p> Berriak daudenean nire helbide elektronikoan jaso nahi ditut</p>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"></label><br>
+               
             </div>
             <div class=>
                 <button name = "Bidali" id = "Botoia" class="Botoia_Bidali">Bidali</button>
             </div>
       </div>
+    </fieldset>
     </div>
       <br>
 
@@ -139,9 +160,9 @@
     <div class="item3">
     <footer>
         <h2>BizkaiaBasket, Bizkaiko saskibaloi federazioa</h2>
-        <img  src="irudiak/twitter.png" alt="" width="20px" heigth="20px">
-        <img  src="irudiak/facebook.png" alt="" width="20px" heigth="20px">
-        <img src="irudiak/youtube.png" alt="" width="20px" height="20px">
+        <a href="https://twitter.com/"> <img  src="irudiak/twitter.png" alt="" width="20px" heigth="20px"></a>
+        <a href="https://facebook.com/"><img  src="irudiak/facebook.png" alt="" width="20px" heigth="20px"></a>
+        <a href="https://youtube.com/"><img src="irudiak/youtube.png" alt="" width="20px" height="20px"></a>
     </footer>
   </div>
   <!--footerra bukatu-->

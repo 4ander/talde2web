@@ -154,6 +154,9 @@ footer{
 
 h2{
   padding-top: 10%;
+  font-family: Good_Morning; /*importatutako tipografia*/
+  src: url(Fonts/Good-Morning.ttf)
+    
 }
 /*berrien sliderrraren programazioa*/
 #berriak td{
@@ -170,8 +173,8 @@ h2{
 .slideshow-container {
   max-width: 700px;/*irudien tamaina*/
   position: relative;
-  margin-bottom: 10%;
-  margin-left: 20%;
+  margin-bottom: 15%;
+  margin-left: 15%;
 }
 
 /* irudiak eskutatzeko aldaketa bakoitzean */
@@ -210,6 +213,7 @@ h2{
 /* Irudi bakoitzaren textua */
 .text {
   color: red;
+
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;

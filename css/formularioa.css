@@ -1,4 +1,9 @@
 /*htmlaren plantilla*/
+
+@font-face {
+    font-family: "fontMenu"; /*importatutako tipografia*/
+    src: url("Fonts\CHOCD-TRIAL.otf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -82,23 +87,22 @@
   .menu >li{
     position: relative;
     display: inline-block;
+      font-family: "fontMenu";
     font-size: 1.5em;
-    font-family: Joker; /*importatutako tipografia*/
-    src: url("Fonts/joker.ttf");
-    font: oblique bold 120% cursive;
     color: #fff;
+    
   }
   .menu >li>a{
     
     display: block;
     padding: 15px 20px;
-    font-family: 'Open sans';
+   
     text-decoration: none;
-    font: oblique bold 120% cursive;
+    font-family: "fontMenu";
     color: #fff;
-    font-size: 35px;
-    font-family: Joker; /*importatutako tipografia*/
-    src: url("Fonts/joker.ttf");
+    font-size: 1.5em;
+   
+   
   
   }
   
@@ -164,6 +168,7 @@
  
   h2{
     padding-top: 10%;
+      
   }
  
 /*formularioaren programazioaren hasiera*/
@@ -179,12 +184,13 @@
     text-align: center;
    }
    input,textarea,select{
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing:border-box;
     font-size: 17px;
     border: none;
+    
    }
    
    form h2{
@@ -212,7 +218,19 @@
    button:hover{
     cursor:pointer;
    }
-  
+  .gorria{
+    color: rgb(253, 72, 72);
+  }
+  .asterisko_kutxa{
+    float: right;
+    margin-top: -20px;
+  }
+  .asterisko_gorria{
+    
+    color: rgb(253, 72, 72);
+    font-size: 1vw;
+
+  }
   
   .container {
     border-radius: 5px;
@@ -222,13 +240,29 @@
   }
   
 
-  .item2>div{
+  .item2>fieldset{
       width:50%;
       margin: auto;
       margin-top: 10px;
-      background-color: rgba(10,60,70,0.7);
+      border-radius: 7px;
+      box-shadow: 6px 6px 0px black;
+      margin-bottom: 10%;
 
   }
+  .item2>fieldset>div{
+    background-color: rgba(10,60,70,0.7);
+
+  }
+  legend{
+    font-size: 17px;
+  }
+  .checkbox{
+    width: 100%;
+    font-size: 17px;
+    float: right;
+  }
+  
+ 
   /*formularioaren programazioaren bukaera*/
 
   p{

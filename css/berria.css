@@ -35,6 +35,9 @@
     'formularioa formularioa formularioa'
     'footer footer footer';
   }
+  .item2>h1{
+    padding: 0 0 0 1.5%;
+  }
   .grid-container>div{
     border-color: gray;
     border-style: solid;
