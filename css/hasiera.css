@@ -15,8 +15,8 @@ html{
   height: 100px;
   background-color: red;
   position: fixed;
-  margin-left:70%;
-  margin-top: 45%;
+  margin-left:140vh;
+  margin-top: 80vh;
   z-index:3;
 }
 /*grid elementuen programazioaren hasiera*/

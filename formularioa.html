@@ -24,7 +24,7 @@
                       <li><a href="taldeak eta partidak.html">Taldeak</a></li>
                   </ul>
               </li>
-              <li><a href="partiduak.html">Partiduak</a>
+              <li><a href="partiduak1-10.html">Partiduak</a>
                   
               </li>
               <li><a href="edukinak.html">Edukina</a>
@@ -42,6 +42,7 @@
 
       <!--formularioa hasten da-->
       <div class="item2">
+        <script src="script/formularioa.js"></script>
           <fieldset>
               <legend>Formularioa</legend>
         <div class="container">
@@ -50,26 +51,26 @@
             <h2 class="asterisko_gorria">Beharrezkoak diren datuak * bat daukate</h2>
         </div>
             <div >
-                <p class="gorria">*</p><input type ="text" name = "Nan" class="Nan" placeholder = "Nan" required pattern="[1-9]{8}[a-zA-Z]{1}"  title="8 hitz eta zenbaki bat sartu behar dira, adb:12345678A" autofocus>
+                <p class="gorria">*</p><input type ="text" name = "Nan" class="Nan" placeholder = "Nan" id="textua"  required onfocus="textuaAldatu()" onblur="blurFunction()" pattern="[1-9]{8}[a-zA-Z]{1}"  title="8 hitz eta zenbaki bat sartu behar dira, adb:12345678A" autofocus>
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type ="text" name = "Izena" class="Izena" placeholder = "Izena"  required pattern=".{3}" title="Izen luzeago bat sartu">
+                <input type ="text" name = "Izena" class="Izena" placeholder = "Izena" id="textua1" required onfocus="textuaAldatu1()" onfocusout="blurFunction1()" autocomplete="on" pattern=".{3}" title="Izen luzeago bat sartu">
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type="text" name = "Abizena" class="Abizena" placeholder="Abizena"  required pattern=".{3}" title="Abizen luzeago bat sartu">
+                <input type="text" name = "Abizena" class="Abizena" placeholder="Abizena" id="textua2" onfocus="textuaAldatu2()" onfocusout="blurFunction2()" required pattern=".{3}" title="Abizen luzeago bat sartu">
             </div>
             <div>
-                <input type="text" name = "Abizena2" class="Abizena2" placeholder="Abizena2" pattern=".{3}" title="Abizen luzeago bat sartu">
+                <input type="text" name = "Abizena2" class="Abizena2" placeholder="Abizena2" id="textua3" onfocus="textuaAldatu3()" onfocusout="blurFunction3()" pattern=".{3}" title="Abizen luzeago bat sartu">
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type="email" name="Helbidea" class="Helbidea" placeholder="Helbidea"  required>
+                <input type="email" name="Helbidea" class="Helbidea" placeholder="Helbidea" id="textua4" onfocus="textuaAldatu4()" onfocusout="blurFunction4()" required>
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type ="text" name = "PostaKodea" class="PostaKodea" placeholder = "PostaKodea" required pattern="[1-9]{5}" title="posta kodeak 5 zenbaki izan behar ditu ad:48360">
+                <input type ="text" name = "PostaKodea" class="PostaKodea" placeholder = "PostaKodea" id="textua5" onfocus="textuaAldatu5()" onfocusout="blurFunction5()" required pattern="[1-9]{5}" title="posta kodeak 5 zenbaki izan behar ditu ad:48360">
             </div>
             <div> 
                 <p class="gorria">*</p>
@@ -77,11 +78,11 @@
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Etxeko-Telefonoa" required pattern="[9]{1}[1-9]{7}" title="telefono zenbakiak '9' zenbakitik hasten dira eta guztira 8 dira">
+                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Etxeko-Telefonoa" id="textua6" onfocus="textuaAldatu6()" onfocusout="blurFunction6()" required pattern="[9]{1}[1-9]{7}" title="telefono zenbakiak '9' zenbakitik hasten dira eta guztira 8 dira">
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Mugikor-Telefonoa" required pattern="[1-9]{8}" title="8 zenbaki sartu behar dira">
+                <input type="telf" name = "Telefonoa" class="Telefonoa" placeholder="Mugikor-Telefonoa" id="textua7" onfocus="textuaAldatu7()" onfocusout="blurFunction7()" required pattern="[1-9]{8}" title="8 zenbaki sartu behar dira">
             </div>
             <div >
                 <p class="gorria">*</p>
@@ -134,11 +135,11 @@
             </div>
             <div > 
                 <p class="gorria">*</p>   
-                <input type ="text" name = "Bankua" class="Bankua" placeholder = "Bankuaren izena" required pattern="[a-zA-Z]">
+                <input type ="text" name = "Bankua" class="Bankua" placeholder = "Bankuaren izena" id="textua8" onfocus="textuaAldatu8()" onblur="blurFunction8()" required pattern="[a-zA-Z]">
             </div>
             <div >
                 <p class="gorria">*</p>
-                <input type ="text" name = "BankuaZenbakia" class="BankuaZenbakia" placeholder = "Bankua Zenbakia" required pattern="[0-9]">
+                <input type ="text" name = "BankuaZenbakia" class="BankuaZenbakia" placeholder = "Bankua Zenbakia" id="textua9" onfocus="textuaAldatu9()" onblur="blurFunction9()" required pattern="[0-9]">
             </div>
             <div class="checkbox">
                 <p> Berriak daudenean nire helbide elektronikoan jaso nahi ditut</p>

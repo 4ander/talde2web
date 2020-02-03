@@ -154,10 +154,39 @@
       border-radius: 2%;
   }
   
- 
+  table, th, td {
+    border: 1px solid black;
+    
+  }
   h2{
     padding-top: 10%;
   }
+  table{
+    width: 100%;
+  }
+  tr, td{
+    padding: 1%;
+  }
+  .grid-aukera{
+    padding:0.2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   /* border: 2px solid yellow;*/
+    width: 33%;
+  }
+  .grid-aukera>div{
+    width:75px;
+    height: 75px;
+    align-content: center;
+    padding-left:25%;
+  }
+  .aukeratua{
+    background-color: brown;
+  }
+  .aukeratzeko{
+    background-color: darkgreen;
+  }
+  
   
  
   
