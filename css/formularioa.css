@@ -87,8 +87,10 @@
   .menu >li{
     position: relative;
     display: inline-block;
-      font-family: "fontMenu";
     font-size: 1.5em;
+    font-family: Joker;
+    src: url("Fonts/joker.ttf");
+    font: oblique bold 120% cursive;
     color: #fff;
     
   }
@@ -96,11 +98,13 @@
     
     display: block;
     padding: 15px 20px;
-   
+    font-family: 'Open sans';
     text-decoration: none;
-    font-family: "fontMenu";
+    font: oblique bold 120% cursive;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 35px;
+    font-family: Joker;
+    src: url("Fonts/joker.ttf");
    
    
   

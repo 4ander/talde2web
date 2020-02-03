@@ -158,6 +158,9 @@
     border: 1px solid black;
     
   }
+  th{
+    background-color: lightgreen;
+  }
   h2{
     padding-top: 10%;
   }
